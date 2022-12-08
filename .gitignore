@@ -1,0 +1,5 @@
+backend/data
+**node_modules
+backend/services/webserver/dataConfig
+logs
+.env
