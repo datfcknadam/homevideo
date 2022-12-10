@@ -1,0 +1,3 @@
+[submodule "backend/services/webserver"]
+	path = backend/services/webserver
+	url = git@github.com:datfcknadam/homevideo-service-webserver.git
