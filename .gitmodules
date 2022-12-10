@@ -13,6 +13,7 @@
 [submodule "backend/infra/nginx"]
 	path = backend/infra/nginx
 	url = git@github.com:datfcknadam/homevideo-infra-nginx.git
+	ignore = dirty
 [submodule "auth"]
 	path = auth
 	url = git@github.com:datfcknadam/homevideo-srv-auth.git
