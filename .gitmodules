@@ -1,0 +1,19 @@
+[submodule "backend/services/webserver"]
+	path = backend/services/webserver
+	url = git@github.com:datfcknadam/homevideo-srv-webserver.git
+[submodule "backend/services/auth"]
+	path = backend/services/auth
+	url = git@github.com:datfcknadam/homevideo-srv-auth.git
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:datfcknadam/homevideo-srv-front.git
+[submodule "backend/artifacts/db"]
+	path = backend/artifacts/db
+	url = git@github.com:datfcknadam/homevideo-art-db.git
+[submodule "backend/infra/nginx"]
+	path = backend/infra/nginx
+	url = git@github.com:datfcknadam/homevideo-infra-nginx.git
+	ignore = dirty
+[submodule "auth"]
+	path = auth
+	url = git@github.com:datfcknadam/homevideo-srv-auth.git

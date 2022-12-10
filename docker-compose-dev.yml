@@ -1,0 +1,32 @@
+version: '3.4'
+x-base:
+  &base
+  networks:
+    - docker_net
+  restart: always
+
+services:
+  # webserver:
+  #   build:
+  #     context: ./backend/services/webserver
+  #     dockerfile: Dockerfile.dev
+  #   volumes:
+  #     - ./backend/services/webserver/src:/usr/app/webserver/src
+  #     - ./backend/data:/usr/app/webserver/data
+  #   container_name: webserver
+  frontend:
+    <<: *base
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./frontend:/usr/app/frontend
+    container_name: frontend
+
+networks:
+  docker_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 11.0.0.0/24
